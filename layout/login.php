@@ -294,7 +294,7 @@ echo $OUTPUT->doctype() ?>
                 <form action="<?php echo $CFG->httpswwwroot; ?>/login/index.php" method="post" id="login" <?php echo $autocomplete; ?> >
                     <div class="inputarea">
                         <div>
-                            <input type="text" name="username" placeholder="<?php echo get_string('username'); ?>" autocomplete="off"/>
+                            <input type="text" name="username" placeholder="<?php echo get_string('username'); ?>" <?php echo $autocomplete; ?> />
                         </div>
                         <div>
                             <input type="password" name="password" id="password" placeholder="<?php echo get_string('password'); ?>"  value="" <?php echo $autocomplete; ?> />
